@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v1.1.2-3-g3c5cb99
+_src_path: git+https://git.sr.ht/~dmerej/copier-python
+author_email: dimitri@dmerej.info
+author_name: Dimitri Merejkowsky
+package_import_name: rpn
+project_description: RPN calculator
+project_name: rpn
+project_version: 0.0.1
