@@ -8,3 +8,4 @@
    * Use content-type `application/json`, not `text/html`
    * Make sure errors are returned like `{"error": {"code": ..., "details": ...}}`
 * Improve validation of requests
+* Add CI/CD
