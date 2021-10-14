@@ -60,3 +60,9 @@ def lint(c):
 @task
 def safety_check(c):
     c.run("safety check")
+
+
+@task
+def serve(c):
+    env = {"FLASK_ENV": "development", "FLASK_APP": "rpn.app"}
+    c.run("flask run", env=env, pty=True)

@@ -25,5 +25,8 @@ class Repository:
             raise NoSuchStack(id)
         return res
 
+    def get_stack_ids(self) -> List[str]:
+        return list(self.stacks.keys())
+
     def delete_stack(self, id: str) -> None:
         self.stacks.pop(id, None)

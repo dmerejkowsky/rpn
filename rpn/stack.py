@@ -3,6 +3,8 @@ from enum import Enum
 from typing import Deque, List
 
 from rpn.errors import Error
+from typing import Dict
+from typing import Any
 
 
 class EmptyStack(Error):
@@ -37,6 +39,9 @@ class Stack:
 
     def clean(self) -> None:
         self._values.clear()
+
+    def to_json(self) -> Dict[str, Any]:
+        return {"values": self.values}
 
     def apply_operand(self, operand: Operand) -> None:
         # Note: all operands have the same arity : 2
