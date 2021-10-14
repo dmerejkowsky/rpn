@@ -9,3 +9,4 @@
    * Make sure errors are returned like `{"error": {"code": ..., "details": ...}}`
 * Improve validation of requests
 * Add CI/CD
+* Add swagger definition (written by hand) or generate it with flask-swagger?
